@@ -1,0 +1,420 @@
+{
+	"info": {
+		"_postman_id": "2143444d-b02f-4b85-a38d-0c70925bfbc3",
+		"name": "Practica",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "APIs Estudiantes",
+			"item": [
+				{
+					"name": "Guardar estudiante",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Irina\",\r\n    \"apellido\": \"Ramirez\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/estudiantes",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"estudiantes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar estudiante",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/estudiantes/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"estudiantes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar estudiante",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"nombre\": \"Irina Belen\",\r\n    \"apellido\": \"Ramirez\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/estudiantes",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"estudiantes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar estudiante",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/estudiantes/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"estudiantes",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar todos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/estudiantes",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"estudiantes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar errores estudiantes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/estudiantes/x",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"estudiantes",
+								"x"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "APIs Materias",
+			"item": [
+				{
+					"name": "Guardar materia",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Infraestructura II\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/materias",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"materias"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar materia",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/materias/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"materias",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar materia",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 6,\r\n    \"nombre\": \"UX/UI\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/materias",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"materias"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar materia",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/materias/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"materias",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar todas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/materias",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"materias"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar errores materias",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/materias/8x",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"materias",
+								"8x"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "APIs Cursadas",
+			"item": [
+				{
+					"name": "Guardar cursada",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"estudiante\": {\"id\": 3},\r\n    \"materia\": {\"id\": 6},\r\n    \"nota\": 8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/cursadas",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cursadas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar cursada",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/cursadas/8",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cursadas",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar cursada",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 7,\r\n    \"estudiante\": {\"id\": 1},\r\n    \"materia\": {\"id\": 4},\r\n    \"nota\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/cursadas",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cursadas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar cursada",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/cursadas/8",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cursadas",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar todas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/cursadas",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cursadas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar errores cursadas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/cursadas/x",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cursadas",
+								"x"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
